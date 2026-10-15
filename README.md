@@ -2,7 +2,7 @@
 
 **Altimeter & mountain tools for iPhone.**
 
-HypsAlp (capital H, capital A, pronounced "ipsalp"; from *hýpsos*, Greek for "height", and Alp) is a barometric altimeter for the mountains with a set of offline tools around it. Its core separates the two causes of a pressure change, a change of altitude and a change of weather, and estimates both at once. The tools (compass, slope, height difference, daylight and way back, sun and shade, moon, lightning distance, oxygen, boiling point, snow profile notebook, emergency card) reuse the same sensors and the same terrain data. Everything runs offline and on-device: the app makes no network calls at all.
+HypsAlp (capital H, capital A, pronounced "ipsalp" - from *hýpsos*, Greek for "height", and Alp) is a barometric altimeter for the mountains with a set of offline tools around it. Its core separates the two causes of a pressure change, a change of altitude and a change of weather, and estimates both at once. The tools (compass, slope, height difference, daylight and way back, sun and shade, moon, lightning distance, oxygen, boiling point, snow profile notebook, emergency card) reuse the same sensors and the same terrain data. Everything runs offline and on-device: the app makes no network calls at all.
 
 ## What's in this repository
 
@@ -16,7 +16,7 @@ The app's source code is **not** included: HypsAlp is proprietary software.
 
 ## Privacy in short
 
-HypsAlp does not collect any data. There is no account, no advertising, no analytics, no tracking, no third-party SDK and no server; the app uses only Apple frameworks and makes no network calls. Everything you record or save stays on your iPhone, and data leaves the device only when you explicitly export or share it. The App Store privacy label is **"Data Not Collected"**.
+HypsAlp does not collect any data. There is no account, no advertising, no analytics, no tracking, no third-party SDK and no server. The app uses only Apple frameworks and makes no network calls. Everything you record or save stays on your iPhone, and data leaves the device only when you explicitly export or share it. The App Store privacy label is **"Data Not Collected"**.
 
 The full policy, including your rights under the GDPR, is on the [web page](https://synaptrek.github.io/hypsalp-app/#privacy) and in the app.
 
@@ -30,7 +30,7 @@ The full policy, including your rights under the GDPR, is on the [web page](http
 | This dataset | ODbL 1.0, see `License and attribution` below |
 | Built on | 2026-09-27 |
 | File | `points.json`, about 11 MB, UTF-8 JSON |
-| Coverage | The Alps, the Apennines, Corsica, Sardinia and Sicily; bounding box 36.69°–49.00° N, 5.00°–19.00° E |
+| Coverage | The Alps, the Apennines, Corsica, Sardinia and Sicily - bounding box 36.69°–49.00° N, 5.00°–19.00° E |
 
 ### Contents
 
@@ -63,7 +63,7 @@ The full policy, including your rights under the GDPR, is on the [web page](http
 | `ele` | Elevation in whole meters |
 | `kind` | `peak`, `saddle`, `pass`, `hut` or `bivouac` |
 | `src` | Where the elevation comes from: `osm` or `dem` (see below) |
-| `name` | The name, when the point has one; absent otherwise |
+| `name` | The name, when the point has one, absent otherwise |
 
 ### Where the elevations come from
 
@@ -82,7 +82,7 @@ From an OpenStreetMap extract, keeping the objects tagged:
 | `tourism=alpine_hut` | `hut` |
 | `tourism=wilderness_hut` | `bivouac` |
 
-Elevations come from the `ele` tag where present; for huts, bivouacs and passes without one, from the Copernicus DEM, marked `src: "dem"`.
+Elevations come from the `ele` tag where present. For huts, bivouacs and passes without one, from the Copernicus DEM, marked `src: "dem"`.
 
 ### License and attribution
 
