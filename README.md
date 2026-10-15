@@ -24,7 +24,6 @@ The full policy, including your rights under the GDPR, is on the [web page](http
 
 `points_dataset_ODbL/points.json` contains the named summits, saddles, passes, mountain huts and bivouacs, with their elevations, that HypsAlp uses to show nearby summits and huts and to calibrate the altimeter. It is a **Derivative Database** of OpenStreetMap data and is published here under the **Open Database License 1.0**, as that license requires, in the same version that is bundled with the app. It may also be useful on its own.
 
-| | |
 |---|---|
 | Source data | © OpenStreetMap contributors, ODbL 1.0 |
 | This dataset | ODbL 1.0, see `License and attribution` below |
