@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HypsAlp: support and privacy &amp; terms</title>
+<meta name="description" content="Support, privacy policy and terms of use for HypsAlp, a barometric altimeter and offline mountain toolkit for iPhone.">
+<style>
+  :root {
+    --bg: #ffffff;
+    --ink: #1c2430;
+    --muted: #5a6573;
+    --rule: #dde2e8;
+    --link: #1D5C9E;
+    --note-bg: #f2f5f8;
+    --sans: -apple-system, BlinkMacSystemFont, "Segoe UI", system-ui, Roboto, "Helvetica Neue", Arial, sans-serif;
+    --serif: "Iowan Old Style", "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+    color-scheme: light;
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--ink);
+    font-family: var(--serif);
+    font-size: 1.0625rem;
+    line-height: 1.65;
+  }
+  main {
+    max-width: 42rem;
+    margin: 0 auto;
+    padding: 3.5rem 1.5rem 4rem;
+  }
+  header h1 {
+    font-family: var(--sans);
+    font-size: clamp(2.4rem, 7vw, 3.4rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1;
+    margin: 0 0 0.75rem;
+  }
+  header p {
+    font-size: 1.15rem;
+    color: var(--muted);
+    margin: 0 0 1.5rem;
+    max-width: 34rem;
+  }
+  .colorbar {
+    height: 8px;
+    border-radius: 4px;
+    background: linear-gradient(90deg, #9EC5EA, #1D5C9E, #0F2440);
+    margin: 0 0 1.25rem;
+  }
+  nav {
+    font-family: var(--sans);
+    font-size: 0.95rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem 1.5rem;
+  }
+  a { color: var(--link); text-underline-offset: 0.15em; }
+  a:focus-visible { outline: 2px solid var(--link); outline-offset: 3px; border-radius: 2px; }
+  section {
+    margin-top: 3.5rem;
+    padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    scroll-margin-top: 1rem;
+  }
+  h2 {
+    font-family: var(--sans);
+    font-size: 1.6rem;
+    font-weight: 650;
+    letter-spacing: -0.015em;
+    margin: 0 0 1rem;
+  }
+  dl { margin: 1.5rem 0 0; }
+  dt {
+    font-family: var(--sans);
+    font-weight: 600;
+    font-size: 1rem;
+    margin-top: 1.5rem;
+  }
+  dd { margin: 0.3rem 0 0; }
+  .note {
+    background: var(--note-bg);
+    border-left: 3px solid #1D5C9E;
+    padding: 0.9rem 1.1rem;
+    margin: 1.25rem 0;
+    border-radius: 0 4px 4px 0;
+  }
+  .meta { color: var(--muted); font-size: 0.95rem; }
+  footer {
+    margin-top: 4rem;
+    padding-top: 1.25rem;
+    border-top: 1px solid var(--rule);
+    font-family: var(--sans);
+    font-size: 0.85rem;
+    color: var(--muted);
+  }
+  @media print {
+    .colorbar, nav { display: none; }
+    section { break-inside: avoid-page; }
+  }
+</style>
+</head>
+<body>
+<main>
+
+  <header>
+    <h1>HypsAlp</h1>
+    <p>Altimeter &amp; mountain tools for iPhone</p>
+    <div class="colorbar" role="presentation"></div>
+    <nav aria-label="Page sections">
+      <a href="#support">Support</a>
+      <a href="#privacy">Privacy policy</a>
+      <a href="#terms">Terms of use</a>
+    </nav>
+  </header>
+
+  <!-- ================= SUPPORT ================= -->
+  <section id="support">
+    <h2>Support</h2>
+    <p>Found a problem, or have an idea for HypsAlp? Write to
+      <a class="email" href="#contact">hypsalp [at] tuta [dot] io</a>.</p>
+    <p>The quickest way is from inside the app: <strong>Settings ▸ Send Feedback</strong>.
+      This opens a pre-filled email in your Mail app containing only the app's name and version.
+      You review the message and send it yourself; nothing is sent automatically.</p>
+    <p class="note">Please don't include other people's personal information in your message.</p>
+  </section>
+
+  <!-- ================= PRIVACY ================= -->
+  <section id="privacy">
+    <h2>Privacy policy</h2>
+    <p>In short: HypsAlp does not collect any data. Everything you record or save stays on your iPhone,
+      and nothing leaves it unless you export or share it yourself.</p>
+
+    <dl>
+      <dt>No accounts, no tracking, no servers</dt>
+      <dd>There is no account, no advertising, no analytics, no tracking and no third-party SDK: the app
+        uses only Apple frameworks. It works entirely offline and makes no network calls at all. Its
+        App Store privacy label is "Data Not Collected". The developer cannot see any of your data and
+        receives nothing from you unless you choose to write an email.</dd>
+
+      <dt>Legal basis</dt>
+      <dd>Because the app collects and transmits no personal data, the developer does not process any
+        and no legal basis under the GDPR is needed for the app itself. The only processing the
+        developer carries out concerns the emails you may send (see below).</dd>
+
+      <dt>On-device only</dt>
+      <dd>The app keeps, in its private storage on your phone, only what you create while using it:
+        recordings (pressure, fused altitude, the pressure trend, the temperature and humidity of an
+        optional external sensor and, when location is on, GPS positions and the distance computed from
+        them), organized in folders; saved places and custom markers with their precise coordinates (your
+        tent, your car); measurements and alerts (slope and height measurements, snow profiles and the
+        weather alerts that fired, with their time, values, notes and position where available); the
+        last hour of altitude and the pressure-trend history; the altimeter calibration, the sea-level
+        pressure it learned, the air temperature you entered and the calibrations of the experimental
+        acoustic and wind tools; and your settings (units, which tools are shown, the chosen external
+        sensor).</dd>
+
+      <dt>Backups and sync</dt>
+      <dd>Like any app, HypsAlp's data may be included in the iCloud or computer backups you make of your
+        iPhone, under the terms of those services. The app itself does not sync anything through iCloud.
+        You can also export a backup of the app's data as a single file and import it again; importing
+        only adds, it never overwrites.</dd>
+
+      <dt>How long data is kept</dt>
+      <dd>Your data is kept until you delete it. Only the last hour of altitude and the pressure-trend
+        history expire on their own as they age.</dd>
+
+      <dt>Deleting data</dt>
+      <dd>Settings ▸ Manage Data deletes by category and shows what each category holds before you
+        confirm. Erase All Data removes everything, offering to write a backup file first. Deleting the
+        app removes everything stored on the phone.</dd>
+
+      <dt>Permissions</dt>
+      <dd>Each permission is requested only by the feature that needs it, and the app keeps working
+        without it. <strong>Motion &amp; Fitness</strong> reads the barometer for altitude and pressure
+        trends. <strong>Location</strong> ("When In Use") provides the GPS altitude that corrects the
+        barometer and the position during recorded hikes; background location is used only while a hike
+        is being recorded, because the phone is usually in a pocket. <strong>Camera</strong> lets you aim
+        at a slope and, with LiDAR, measure its angle; it is also used by the experimental rangefinder and
+        for the flashlight in the Morse SOS. Nothing is recorded or saved. <strong>Microphone</strong> is
+        used only while a tool that needs it is open: the thunder after a lightning flash, the echoes of
+        the acoustic thermometer, the rush of the wind. Sound is turned into measurements on the spot and
+        never recorded or saved. <strong>Bluetooth</strong> is used only if you choose an external
+        temperature sensor (a RuuviTag or a BTHome sensor); until then the app never touches Bluetooth
+        and never asks. Background Bluetooth is used only during an active recording, only to read the
+        chosen sensor, and the app only reads: nothing is ever written to the sensor.
+        <strong>Notifications</strong> are local: weather alerts at night, the turnaround reminder,
+        battery warnings, a paused-recording reminder, arrival at a target altitude.</dd>
+
+      <dt>Lock Screen, Live Activity and widget</dt>
+      <dd>During a recording, a Live Activity and a widget show your altitude and recording data on the
+        Lock Screen. They are displayed by iOS on your device and transmitted nowhere.</dd>
+
+      <dt>When data leaves your phone</dt>
+      <dd>Data leaves your phone only when you explicitly export or share it, through the share sheet or
+        the Files app: CSV, GPX, CAAML and A4 PDF exports of recordings, saved places and snow profiles;
+        a shareable picture of a recording; a backup file; and the emergency card text, which contains
+        your coordinates and is meant for rescuers. Two switches protect you: <strong>Include Location
+        in Exports</strong> is off by default, and without it the CSV, GPX, CAAML and PDF exports carry no
+        coordinates; <strong>Shared Pictures</strong> can hide the start and/or the end of a track within
+        a radius of 200 m to 2 km, so a picture does not reveal your home or the trailhead. Diagnostics
+        pages never carry your position, and the sensor diagnostics report cannot be shared at all.</dd>
+
+      <dt>When you email the developer</dt>
+      <dd>If you send an email, the developer receives your email address and the content of your
+        message, and uses them only to reply to you and to fix the problem you report. This is done on
+        the basis of the developer's legitimate interest in supporting the app. Messages are kept for as
+        long as needed to handle your request, and no longer than 12 months, unless the law requires
+        otherwise. They are not shared with anyone or used for any other purpose. You can ask for them to
+        be deleted at any time by writing to
+        <a class="email" href="#contact">hypsalp [at] tuta [dot] io</a>.</dd>
+
+      <dt>Your rights</dt>
+      <dd>The only personal data the developer may hold is the emails you send. Depending on where you
+        live, you may have the right to access, correct or delete that data, to object to its processing,
+        and to lodge a complaint with your data-protection authority. In the EU/EEA these rights come from
+        the GDPR; in Italy the authority is the Garante per la protezione dei dati personali. To exercise
+        any right, write to <a class="email" href="#contact">hypsalp [at] tuta [dot] io</a>.</dd>
+
+      <dt>Children</dt>
+      <dd>HypsAlp is not directed at children, and it collects no data from anyone.</dd>
+
+      <dt>Third-party data in the app</dt>
+      <dd>The app includes offline datasets from third parties, bundled as static files: the Copernicus
+        DEM GLO-30 elevation model (Copernicus WorldDEM-30 license; relief images carry the attribution
+        the license requires), surveyed points from OpenStreetMap (© OpenStreetMap contributors, ODbL 1.0)
+        and NOAA's World Magnetic Model WMM2025 (public domain). The bundled dataset of summits, saddles,
+        passes, huts and bivouacs is a Derivative Database of OpenStreetMap data, released under the
+        <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License 1.0 (ODbL)</a>
+        and available at
+        <a href="https://github.com/synaptrek/hypsalp-app/blob/main/points_dataset_ODbL/points.json">github.com/synaptrek/hypsalp-app</a>.
+        The full attributions are in Settings ▸ Data &amp; Licenses.</dd>
+
+      <dt>This website</dt>
+      <dd>This page uses no cookies and no analytics. It is hosted on GitHub Pages; as with any website,
+        the hosting provider may record technical data such as IP addresses in its server logs, under
+        <a href="https://docs.github.com/site-policy/privacy-policies/github-general-privacy-statement">GitHub's privacy statement</a>.</dd>
+
+      <dt>Changes to this policy</dt>
+      <dd>If this policy changes, the updated version will be published on this page and in the app with
+        a new date.</dd>
+
+      <dt id="contact">Contact</dt>
+      <dd>HypsAlp is developed by the individual listed as the seller on the App Store, based in Italy.
+        For any privacy question, write to
+        <a class="email" href="#contact">hypsalp [at] tuta [dot] io</a>.</dd>
+    </dl>
+  </section>
+
+  <!-- ================= TERMS ================= -->
+  <section id="terms">
+    <h2>Terms of use</h2>
+
+    <dl>
+      <dt>An instrument and a notebook, not a verdict</dt>
+      <dd>HypsAlp is an aid for the mountains. It is <strong>not</strong> a certified navigation,
+        meteorological or safety device, and it does not replace a map, a compass, training, or judgment
+        in the field. Altitude, pressure trends, slope and height readings, daylight and way-back times
+        are indications to be checked against the conditions and your own judgment. The app gives no
+        arrival-time estimates.</dd>
+
+      <dt>Storm warning</dt>
+      <dd>The storm warning is a hint from the barometer, not a forecast: a fast fall in pressure, or the
+        pressure jump typical of a gust front. Afternoon heat thunderstorms can give no barometric signal
+        at all.</dd>
+
+      <dt>Snow profile</dt>
+      <dd>The snow profile is a notebook. It records your own observations and does <strong>not</strong>
+        assess snowpack stability or avalanche danger; it does not replace the avalanche bulletin,
+        training and judgment on the terrain.</dd>
+
+      <dt>Lightning, oxygen, estimates</dt>
+      <dd>The lightning distance is an indication, not an alerting service: the first thunder comes from
+        the nearest point of the channel. The oxygen reading is physical information, not medical advice.
+        Freezing level and sun-and-shade hours are estimates: the real lapse rate varies, winter
+        inversions throw it off, and the 30 m elevation model knows nothing of trees, buildings or
+        boulders.</dd>
+
+      <dt>Emergencies</dt>
+      <dd>The emergency card helps you read your position and places calls through the normal phone
+        dialer. It sits beside the iOS Emergency SOS and satellite SOS and does not replace them: in an
+        emergency, use the official emergency features of your phone and call the rescue number of the
+        country you are in.</dd>
+
+      <dt>Experimental tools</dt>
+      <dd>Tools marked as experimental are off by default and provided for curiosity and testing. Their
+        results may be inaccurate and must not be used for safety-related decisions. Some tools, or parts
+        of them, are hidden or reduced on iPhones without the hardware they need, such as LiDAR.</dd>
+
+      <dt>Coverage</dt>
+      <dd>The elevation model and the surveyed points cover the Alps, the Apennines, Corsica, Sardinia
+        and Sicily (roughly 36–49° N, 5–19° E). Outside that area the app still works as a barometric
+        altimeter and says so with a "Partial Coverage" or "Outside Coverage" badge; Settings ▸
+        Altimeter ▸ Data Coverage lists it country by country.</dd>
+
+      <dt>No warranty</dt>
+      <dd>The app is provided “as is”, without warranty of any kind. Readings, calculations and derived
+        views may contain errors, and the app may stop working or lose data. Keep your own backups of
+        what matters to you.</dd>
+
+      <dt>Your responsibility</dt>
+      <dd>You are responsible for how you use the app and for what you share from it. Exports with
+        location enabled and the emergency card text contain your precise coordinates; review them before
+        sharing. Do not rely on HypsAlp where a certified instrument is required.</dd>
+
+      <dt>Limitation of liability</dt>
+      <dd>To the maximum extent permitted by law, the developer is not liable for any damages arising from
+        the use of, or inability to use, HypsAlp, including decisions taken in the mountains on the basis
+        of its readings.</dd>
+
+      <dt>License</dt>
+      <dd>HypsAlp is proprietary software. All rights reserved. Third-party data and its licenses are
+        listed in Settings ▸ Data &amp; Licenses. The bundled points dataset is a Derivative Database of
+        OpenStreetMap data released under the ODbL 1.0 (see above); the ODbL applies to that dataset only,
+        not to the app. Snow grain shapes and classes follow the international snow classification
+        (Fierz et al., 2009); the symbols shown are drawn by HypsAlp and are not the IACS symbol font.
+        CAAML is a format of the Canadian Avalanche Association. HypsAlp is not affiliated with IACS,
+        UNESCO or the CAA.</dd>
+
+      <dt>Trademarks</dt>
+      <dd>HypsAlp is compatible with RuuviTag sensors. RuuviTag is a product of Ruuvi Innovations Ltd
+        (Oy), and Ruuvi® is a registered trademark of Ruuvi Innovations Ltd (Oy). BTHome is an open
+        standard maintained at <a href="https://bthome.io">bthome.io</a>. The Bluetooth® word mark is a
+        registered trademark owned by Bluetooth SIG, Inc. Apple, iPhone and Apple Watch are trademarks of
+        Apple Inc.; Garmin is a trademark of Garmin Ltd. HypsAlp is an independent app and is not
+        affiliated with, endorsed or sponsored by any of these parties; their names are used only to
+        describe compatibility.</dd>
+    </dl>
+  </section>
+
+  <footer>
+    <p>Last updated: October 15, 2026</p>
+    <p>© 2026 the developer of HypsAlp. All rights reserved.</p>
+  </footer>
+
+</main>
+
+<script>
+  // Support address is assembled here.
+  (function () {
+    var user = "hypsalp";
+    var domain = ["tuta", "io"].join(".");
+    var address = user + "@" + domain;
+    var links = document.querySelectorAll("a.email");
+    for (var i = 0; i < links.length; i++) {
+      links[i].textContent = address;
+      links[i].setAttribute("href", "mailto:" + address);
+    }
+  })();
+</script>
+</body>
+</html>
