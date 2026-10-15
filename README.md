@@ -27,7 +27,7 @@ The full policy, including your rights under the GDPR, is on the [web page](http
 | | |
 |---|---|
 | Source data | © OpenStreetMap contributors, ODbL 1.0 |
-| This dataset | ODbL 1.0, see [`points_dataset_ODbL/LICENSE.md`](points_dataset_ODbL/LICENSE.md) |
+| This dataset | ODbL 1.0, see `License and attribution` below |
 | Built on | 2026-09-27 |
 | File | `points.json`, about 11 MB, UTF-8 JSON |
 | Coverage | The Alps, the Apennines, Corsica, Sardinia and Sicily; bounding box 36.69°–49.00° N, 5.00°–19.00° E |
