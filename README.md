@@ -4,6 +4,11 @@
 
 HypsAlp (capital H, capital A, pronounced "ipsalp" - from *hýpsos*, Greek for "height", and Alp) is a barometric altimeter for the mountains with a set of offline tools around it. Its core separates the two causes of a pressure change, a change of altitude and a change of weather, and estimates both at once. The tools (compass, slope, height difference, daylight and way back, sun and shade, moon, lightning distance, oxygen, boiling point, snow profile notebook, emergency card) reuse the same sensors and the same terrain data. Everything runs offline and on-device: the app makes no network calls at all.
 
+<a href="https://apps.apple.com/it/app/hypsalp/id6823210152?itscg=30200&itsct=apps_box_badge&mttnsubad=6823210152" style="display: inline-block;">
+    <img src="https://toolbox.marketingtools.apple.com/api/v2/badges/download-on-the-app-store/black/en-us?releaseDate=1794268800" alt="Download on the App Store" style="height: 50px; vertical-align: middle; object-fit: contain;" />
+</a>
+    
+
 ## What's in this repository
 
 | Item | Content |
