@@ -14,7 +14,7 @@ HypsAlp (capital H, capital A, pronounced "ipsalp" - from *hýpsos*, Greek for "
 | Item | Content |
 |---|---|
 | `index.html` | Support, Privacy Policy and Terms of Use, published with GitHub Pages at **[synaptrek.github.io/hypsalp-app](https://synaptrek.github.io/hypsalp-app/)**. This is the Privacy Policy URL used on the App Store and in the app. |
-| `points_dataset_ODbL/points.json` | The dataset of summits, saddles, passes, huts and bivouacs bundled with the app, released under the **ODbL 1.0**. Its own `README.md` and `LICENSE.md` sit in the same folder. |
+| `points_dataset_ODbL/points.json` | The dataset of summits, saddles, passes, huts and bivouacs bundled with the app, released under the **ODbL 1.0**. |
 | `README.md` | This file. |
 
 The app's source code is **not** included: HypsAlp is proprietary software.
