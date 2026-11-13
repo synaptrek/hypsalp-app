@@ -150,20 +150,33 @@
       <dt>On-device only</dt>
       <dd>The app keeps, in its private storage on your phone, only what you create while using it:
         recordings (pressure, fused altitude, the pressure trend, the temperature and humidity of an
-        optional external sensor and, when location is on, GPS positions and the distance computed from
-        them), organized in folders; saved places and custom markers with their precise coordinates (your
+        optional external sensor together with which sensor they came from, and, when location is on,
+        GPS positions and the distance computed from them), organized in folders; saved places and custom markers with their precise coordinates (your
         tent, your car); measurements and alerts (slope and height measurements, snow profiles and the
         weather alerts that fired, with their time, values, notes and position where available); the
         last hour of altitude and the pressure-trend history; the altimeter calibration, the sea-level
         pressure it learned, the air temperature you entered and the calibrations of the experimental
-        acoustic and wind tools; and your settings (units, which tools are shown, the chosen external
-        sensor).</dd>
+        acoustic and wind tools; your external sensors (see below); and your settings (units, which
+        tools are shown).</dd>
+
+      <dt>External sensors</dt>
+      <dd>You can keep up to eight RuuviTag or BTHome temperature sensors in a list called
+        <strong>My Sensors</strong>, each with an optional name you choose (up to 30 characters). For
+        each sensor the app stores, on your phone only: its kind; its identity (a RuuviTag's Bluetooth
+        MAC address, read from its Bluetooth broadcasts or from its NFC tag, or for a BTHome sensor the
+        identifier iOS assigns to it); what it measures; the date it was added; and when it was last
+        seen, with its last temperature. Only <strong>one</strong> sensor at a time is used for the
+        altitude correction: it is the only one whose readings are used to correct the altitude and
+        stored in your recordings, together with its identifier and the name it had at the time. The
+        other sensors are only displayed while the My Sensors screen is open. The app only reads from
+        sensors and never changes anything on them.</dd>
 
       <dt>Backups and sync</dt>
       <dd>Like any app, HypsAlp's data may be included in the iCloud or computer backups you make of your
         iPhone, under the terms of those services. The app itself does not sync anything through iCloud.
         You can also export a backup of the app's data as a single file and import it again; importing
-        only adds, it never overwrites.</dd>
+        only adds, it never overwrites. The backup file includes your list of sensors, with their names
+        and the one in use.</dd>
 
       <dt>How long data is kept</dt>
       <dd>Your data is kept until you delete it. Only the last hour of altitude and the pressure-trend
@@ -171,8 +184,8 @@
 
       <dt>Deleting data</dt>
       <dd>Settings ▸ Manage Data deletes by category and shows what each category holds before you
-        confirm. Erase All Data removes everything, offering to write a backup file first. Deleting the
-        app removes everything stored on the phone.</dd>
+        confirm. Erase All Data removes everything, offering to write a backup file first. Both also
+        delete the list of external sensors. Deleting the app removes everything stored on the phone.</dd>
 
       <dt>Permissions</dt>
       <dd>Each permission is requested only by the feature that needs it, and the app keeps working
@@ -184,10 +197,15 @@
         for the flashlight in the Morse SOS. Nothing is recorded or saved. <strong>Microphone</strong> is
         used only while a tool that needs it is open: the thunder after a lightning flash, the echoes of
         the acoustic thermometer, the rush of the wind. Sound is turned into measurements on the spot and
-        never recorded or saved. <strong>Bluetooth</strong> is used only if you choose an external
+        never recorded or saved. <strong>Bluetooth</strong> is used only if you add an external
         temperature sensor (a RuuviTag or a BTHome sensor); until then the app never touches Bluetooth
-        and never asks. Background Bluetooth is used only during an active recording, only to read the
-        chosen sensor, and the app only reads: nothing is ever written to the sensor.
+        and never asks. Background Bluetooth is used only during an active recording, and only to read
+        the one sensor chosen for the altitude correction; the app only reads: nothing is ever written
+        to a sensor. <strong>NFC</strong>, on iPhones that support it, is used only when you choose to
+        add a RuuviTag by holding your iPhone near it: iOS shows its own NFC sheet every time, nothing is
+        read unless you start it, and the app reads the tag's text records once (the sensor's
+        identifier, its Bluetooth MAC address and its firmware version). Nothing is ever written to the
+        tag.
         <strong>Notifications</strong> are local: weather alerts at night, the turnaround reminder,
         battery warnings, a paused-recording reminder, arrival at a target altitude.</dd>
 
@@ -333,7 +351,7 @@
   </section>
 
   <footer>
-    <p>Last updated: October 15, 2026</p>
+    <p>Last updated: November 12, 2026</p>
     <p>© 2026 the developer of HypsAlp. All rights reserved.</p>
   </footer>
 
