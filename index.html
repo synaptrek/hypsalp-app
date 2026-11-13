@@ -165,10 +165,12 @@
         each sensor the app stores, on your phone only: its kind; its identity (a RuuviTag's Bluetooth
         MAC address, read from its Bluetooth broadcasts or from its NFC tag, or for a BTHome sensor the
         identifier iOS assigns to it); what it measures; the date it was added; and when it was last
-        seen, with its last temperature. Only <strong>one</strong> sensor at a time is used for the
-        altitude correction: it is the only one whose readings are used to correct the altitude and
-        stored in your recordings, together with its identifier and the name it had at the time. The
-        other sensors are only displayed while the My Sensors screen is open. The app only reads from
+        seen, with its last temperature. Only <strong>one</strong> sensor at a time is
+        <strong>in use</strong>: it is the only one stored in your recordings, together with its
+        identifier and the name it had at the time, and the only one read in the background (and only
+        during an active recording). Its temperature corrects the altitude unless you turn off
+        <strong>Trust Its Temperature</strong>, in which case it is only shown and recorded. The other
+        saved sensors are only displayed while the My Sensors screen is open. The app only reads from
         sensors and never changes anything on them.</dd>
 
       <dt>Backups and sync</dt>
@@ -200,7 +202,7 @@
         never recorded or saved. <strong>Bluetooth</strong> is used only if you add an external
         temperature sensor (a RuuviTag or a BTHome sensor); until then the app never touches Bluetooth
         and never asks. Background Bluetooth is used only during an active recording, and only to read
-        the one sensor chosen for the altitude correction; the app only reads: nothing is ever written
+        the one sensor set as in use; the app only reads: nothing is ever written
         to a sensor. <strong>NFC</strong>, on iPhones that support it, is used only when you choose to
         add a RuuviTag by holding your iPhone near it: iOS shows its own NFC sheet every time, nothing is
         read unless you start it, and the app reads the tag's text records once (the sensor's
