@@ -138,9 +138,26 @@
     <dl>
       <dt>No accounts, no tracking, no servers</dt>
       <dd>There is no account, no advertising, no analytics, no tracking and no third-party SDK: the app
-        uses only Apple frameworks. It works entirely offline and makes no network calls at all. Its
-        App Store privacy label is "Data Not Collected". The developer cannot see any of your data and
+        uses only Apple frameworks. The app itself makes no network calls and works offline; the only
+        downloads are the terrain data packs described below, which iOS fetches from Apple's servers.
+        Its App Store privacy label is "Data Not Collected". The developer cannot see any of your data and
         receives nothing from you unless you choose to write an email.</dd>
+
+      <dt>Terrain data downloads</dt>
+      <dd>The app's terrain data (elevation, tree cover and points of interest) comes in regional packs
+        that iOS downloads from Apple's servers, in the same way as the app itself: the Alps pack
+        automatically when the app is installed or updated, every other region only when you choose to
+        download it, in Settings ▸ Altimeter ▸ Terrain Data. Packs you already have are kept up to date
+        by iOS in the background, and a pack you remove stays off your iPhone until you download it
+        again: this holds for the Alps too. The app may suggest a region you are in that you have
+        not downloaded; that suggestion is worked out on your iPhone, and nothing is downloaded unless
+        you tap Download. Nothing about you, your location or your measurements is sent with these
+        downloads, and the developer receives no personal data from them. As with any App Store
+        download, Apple handles the transfer under
+        <a href="https://www.apple.com/legal/privacy/">Apple's privacy policy</a>. The packs contain
+        only public map data, are stored in the app's storage and can be removed at any time, one by
+        one in Settings ▸ Altimeter ▸ Terrain Data or all at once in Settings ▸ Manage Data; deleting
+        the app removes them too.</dd>
 
       <dt>Legal basis</dt>
       <dd>Because the app collects and transmits no personal data, the developer does not process any
@@ -186,8 +203,10 @@
 
       <dt>Deleting data</dt>
       <dd>Settings ▸ Manage Data deletes by category and shows what each category holds before you
-        confirm. Erase All Data removes everything, offering to write a backup file first. Both also
-        delete the list of external sensors. Deleting the app removes everything stored on the phone.</dd>
+        confirm. Erase All Data removes everything you created, offering to write a backup file first,
+        and deletes the list of external sensors too. The terrain packs are public map data, not yours,
+        so Erase All Data leaves them: remove them in Settings ▸ Manage Data ▸ Terrain Packs. Deleting
+        the app removes everything stored on the phone.</dd>
 
       <dt>Permissions</dt>
       <dd>Each permission is requested only by the feature that needs it, and the app keeps working
@@ -220,8 +239,8 @@
         the Files app: CSV, GPX, CAAML and A4 PDF exports of recordings, saved places and snow profiles;
         a shareable picture of a recording; a backup file; and the emergency card text, which contains
         your coordinates and is meant for rescuers. Two switches protect you: <strong>Include Location
-        in Exports</strong> is off by default, and without it the CSV, GPX, CAAML and PDF exports carry no
-        coordinates; <strong>Shared Pictures</strong> can hide the start and/or the end of a track within
+        in Exports</strong>, in Settings ▸ Privacy Settings, is on by default and can be turned off, and
+        without it the CSV, GPX, CAAML and PDF exports carry no coordinates; <strong>Shared Pictures</strong> can hide the start and/or the end of a track within
         a radius of 200 m to 2 km, so a picture does not reveal your home or the trailhead. Diagnostics
         pages never carry your position, and the sensor diagnostics report cannot be shared at all.</dd>
 
@@ -245,14 +264,18 @@
       <dd>HypsAlp is not directed at children, and it collects no data from anyone.</dd>
 
       <dt>Third-party data in the app</dt>
-      <dd>The app includes offline datasets from third parties, bundled as static files: the Copernicus
-        DEM GLO-30 elevation model (Copernicus WorldDEM-30 license; relief images carry the attribution
-        the license requires), surveyed points from OpenStreetMap (© OpenStreetMap contributors, ODbL 1.0)
-        and NOAA's World Magnetic Model WMM2025 (public domain). The bundled dataset of summits, saddles,
-        passes, huts and bivouacs is a Derivative Database of OpenStreetMap data, released under the
+      <dd>The terrain packs contain third-party data: the Copernicus DEM GLO-30 elevation model
+        (Copernicus WorldDEM-30 license; relief images carry the attribution the license requires);
+        tree cover derived from ESA WorldCover 10 m 2021 v200 (CC BY 4.0; © ESA WorldCover project 2021 /
+        Contains modified Copernicus Sentinel data (2021) processed by ESA WorldCover consortium; changed
+        from the original: the “Tree cover” class was resampled to the terrain grid as a percentage of
+        each cell); surveyed points from OpenStreetMap (© OpenStreetMap contributors, ODbL 1.0); and, for
+        the map of the regions, coastlines from Natural Earth (public domain). The app itself bundles
+        NOAA's World Magnetic Model WMM2025 (public domain). The dataset of summits, saddles, passes,
+        huts and bivouacs is a Derivative Database of OpenStreetMap data, released under the
         <a href="https://opendatacommons.org/licenses/odbl/1-0/">Open Database License 1.0 (ODbL)</a>
-        and available at
-        <a href="https://github.com/synaptrek/hypsalp-app/blob/main/points_dataset_ODbL/points.json">github.com/synaptrek/hypsalp-app</a>.
+        and available, in the same version that is in the terrain packs, at
+        <a href="https://github.com/synaptrek/hypsalp-app/tree/main/points_dataset_ODbL">github.com/synaptrek/hypsalp-app</a>.
         The full attributions are in Settings ▸ Data &amp; Licenses.</dd>
 
       <dt>This website</dt>
@@ -297,8 +320,8 @@
       <dd>The lightning distance is an indication, not an alerting service: the first thunder comes from
         the nearest point of the channel. The oxygen reading is physical information, not medical advice.
         Freezing level and sun-and-shade hours are estimates: the real lapse rate varies, winter
-        inversions throw it off, and the 30 m elevation model knows nothing of trees, buildings or
-        boulders.</dd>
+        inversions throw it off, and the 30 m elevation model shows forests at the height of the
+        treetops and knows nothing of buildings or boulders.</dd>
 
       <dt>Emergencies</dt>
       <dd>The emergency card helps you read your position and places calls through the normal phone
@@ -312,10 +335,14 @@
         of them, are hidden or reduced on iPhones without the hardware they need, such as LiDAR.</dd>
 
       <dt>Coverage</dt>
-      <dd>The elevation model and the surveyed points cover the Alps, the Apennines, Corsica, Sardinia
-        and Sicily (roughly 36–49° N, 5–19° E). Outside that area the app still works as a barometric
-        altimeter and says so with a "Partial Coverage" or "Outside Coverage" badge; Settings ▸
-        Altimeter ▸ Data Coverage lists it country by country.</dd>
+      <dd>The terrain packs cover the European Union, the United Kingdom, Norway, Switzerland,
+        Liechtenstein, Iceland, Andorra, Monaco, San Marino, Vatican City, the Western Balkans and the
+        whole of Cyprus (not the Azores, Madeira, the Canary Islands, Svalbard or overseas territories),
+        in regions built around mountain ranges. Terrain data is available only in the regions you have
+        downloaded; elsewhere the app still works as a barometric altimeter and says so. Downloading a
+        region needs an internet connection and free storage, and depends on Apple's servers; once
+        downloaded, the data works offline. Settings ▸ Altimeter ▸ Terrain Data lists the regions, the mountain ranges
+        and countries each one covers, and what is installed.</dd>
 
       <dt>No warranty</dt>
       <dd>The app is provided “as is”, without warranty of any kind. Readings, calculations and derived
@@ -334,7 +361,7 @@
 
       <dt>License</dt>
       <dd>HypsAlp is proprietary software. All rights reserved. Third-party data and its licenses are
-        listed in Settings ▸ Data &amp; Licenses. The bundled points dataset is a Derivative Database of
+        listed in Settings ▸ Data &amp; Licenses. The points dataset in the terrain packs is a Derivative Database of
         OpenStreetMap data released under the ODbL 1.0 (see above); the ODbL applies to that dataset only,
         not to the app. Snow grain shapes and classes follow the international snow classification
         (Fierz et al., 2009); the symbols shown are drawn by HypsAlp and are not the IACS symbol font.
@@ -342,18 +369,17 @@
         UNESCO or the CAA.</dd>
 
       <dt>Trademarks</dt>
-      <dd>HypsAlp is compatible with RuuviTag sensors. RuuviTag is a product of Ruuvi Innovations Ltd
-        (Oy), and Ruuvi® is a registered trademark of Ruuvi Innovations Ltd (Oy). BTHome is an open
-        standard maintained at <a href="https://bthome.io">bthome.io</a>. The Bluetooth® word mark is a
-        registered trademark owned by Bluetooth SIG, Inc. Apple, iPhone and Apple Watch are trademarks of
-        Apple Inc.; Garmin is a trademark of Garmin Ltd. HypsAlp is an independent app and is not
-        affiliated with, endorsed or sponsored by any of these parties; their names are used only to
-        describe compatibility.</dd>
+      <dd>RuuviTag is a product of Ruuvi Innovations Ltd (Oy), and Ruuvi® is a registered trademark of
+        Ruuvi Innovations Ltd (Oy). BTHome is an open standard maintained at
+        <a href="https://bthome.io">bthome.io</a>. The Bluetooth® word mark is a registered trademark
+        owned by Bluetooth SIG, Inc. iPhone, iOS, iCloud and App Store are trademarks of Apple Inc.
+        HypsAlp is an independent app and is not affiliated with, endorsed or sponsored by any of these
+        parties. Their names are used only to describe compatibility.</dd>
     </dl>
   </section>
 
   <footer>
-    <p>Last updated: November 12, 2026</p>
+    <p>Last updated: November 22, 2026</p>
     <p>© 2026 the developer of HypsAlp. All rights reserved.</p>
   </footer>
 
